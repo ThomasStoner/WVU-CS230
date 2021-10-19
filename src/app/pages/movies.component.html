@@ -1,0 +1,11 @@
+<app-sub-header-nav-bar>load subnav header</app-sub-header-nav-bar>
+<div class="container-fluid bg-dark">
+    <div class="d-flex flex-col">
+        <div class="d-flex flex-row">
+            <div *ngFor="let movie of movies">
+                 <app-movie-cards title={{movie.title}} description={{movie.description}}
+                imagePath={{movie.imagePath}}>Load Card</app-movie-cards>
+            </div>
+        </div>
+    </div>
+</div>
