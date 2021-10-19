@@ -22,6 +22,6 @@ export const list_movies = [
     {
         title: "Hellraiser",
         description: "A puzzle box reveals a realm of sadistic demons led by a being named Pinhead",
-        imagePath: "./assets/sledgehammer.jpg"
+        imagePath: "./assets/hellraiser.jpg"
     }
 ]
