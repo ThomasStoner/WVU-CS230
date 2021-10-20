@@ -24,6 +24,10 @@ import { MinorCardsComponent } from './seriesParts/minor-cards.component';
 import { ListComponent } from './myList/list.component';
 import { HttpClientModule} from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info-component';
+import { EditAccount } from './myAccount/edit-account.component';
+import { AccountComponent } from './myAccount/account.component';
+import { FormsModule } from '@angular/forms';
+import { EditAccountService } from './myAccount/edit-account.service';
 
 @NgModule({
   declarations: [
@@ -47,12 +51,15 @@ import { UserInfoComponent } from './header/user-info-component';
     MajorCardsComponent,
     MinorCardsComponent,
     ListComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    EditAccount,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
