@@ -31,6 +31,8 @@ import { EditAccountService } from './myAccount/edit-account.service';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire/compat';
+
 
 @NgModule({
   declarations: [
@@ -63,7 +65,8 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    AngularFireModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase, 'Shudder')),
     provideDatabase(() => getDatabase())
   ],
   providers: [],

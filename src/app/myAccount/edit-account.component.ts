@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { DatabaseService } from "../DatabaseParts/database.service";
 import { AccountInfo } from "./edit-account.model";
 import { EditAccountService } from "./edit-account.service";
 
@@ -9,8 +10,8 @@ import { EditAccountService } from "./edit-account.service";
 
 export class EditAccount {
 
-    constructor(private infoService: EditAccountService) {
-
+    constructor(private infoService: EditAccountService, private dbService:DatabaseService) {
+        dbService.showData();
     }
 
     onUpdateAccount(data:AccountInfo) {
