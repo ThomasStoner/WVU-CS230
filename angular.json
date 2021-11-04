@@ -106,6 +106,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "Shudder:build:production",
+            "firebaseProject": "shudder-app-actual",
+            "firebaseHostingSite": "shudder-app-actual"
+          }
         }
       }
     }

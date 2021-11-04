@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "shudder-app-actual": {
+      "hosting": {
+        "Shudder": [
+          "shudder-app-actual"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "shudder-app-actual"
+  }
+}

@@ -3,14 +3,14 @@
         <div class="col bg-dark">
             <div class="input-group">
                 <form #postForm="ngForm" (ngSubmit)="onUpdateAccount(postForm.value)">
-                    <div class="input-group">
+                    <div class="input-group pt-10">
                         <span class="input-group-text"> Username</span>
-                        <input type="text" aria-label="Username" class="form-control">
+                        <input type="text" class="form-control" ngModel name="Username">
                         
                       </div>
                       <div class="input-group">
                         <span class="input-group-text">Password</span>
-                        <input type="text" aria-label="Password" class="form-control">
+                        <input type="text" class="form-control" ngModel name="Password">
                         
                       </div>
                       <button class = "btn btn-dark" type ="submit">
