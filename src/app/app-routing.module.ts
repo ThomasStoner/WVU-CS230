@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule,Routes } from '@angular/router';
+import { AuthComponent } from './authentication/auth.component';
 import { CollectionsComponent } from './pages/collections.component';
 import { HomeComponent } from './pages/home.component';
 import { MoviesComponent } from './pages/movies.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'shudder-tv', component: ShudderTVComponent},
   { path: 'my-list', component: MyListComponent},
   { path: 'my-account', component: MyAccountComponent},
+  { path: 'auth', component: AuthComponent},
   { path: "", redirectTo: "/home", pathMatch: "full"}
 ]
 

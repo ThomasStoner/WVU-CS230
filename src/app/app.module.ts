@@ -32,6 +32,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
+import { AuthComponent } from './authentication/auth.component';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { AngularFireModule } from '@angular/fire/compat';
     ListComponent,
     UserInfoComponent,
     EditAccount,
-    AccountComponent
+    AccountComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
